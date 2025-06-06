@@ -10,8 +10,6 @@ Dự án được khởi xướng bởi NTH106, một nhà phát triển đam m�
 ![image](https://github.com/user-attachments/assets/df7664e6-637d-469f-abe3-723f807de540)
 
 Cảm biến đa thông số đất được sử dụng trong dự án này là một thiết bị công nghiệp với giao diện RS485, hỗ trợ giao thức Modbus RTU. Thiết bị này có thiết kế chắc chắn với 5 đầu dò kim loại, được tối ưu để đo lường nhiều thông số cùng lúc, bao gồm độ ẩm, nhiệt độ, độ pH, và độ dẫn điện (EC). Nhờ khả năng hoạt động ổn định trong môi trường khắc nghiệt, cảm biến này rất phù hợp cho các ứng dụng ngoài trời, như trong nông nghiệp, nghiên cứu môi trường, hoặc các hệ thống giám sát tự động.
-Hình ảnh cảm biến:
-
 
 📡 Module MAX485 V2
 ![image](https://github.com/user-attachments/assets/97db52c8-e105-45ff-9b68-c005ab9dbd7a)
