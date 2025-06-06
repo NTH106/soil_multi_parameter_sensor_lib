@@ -1,6 +1,8 @@
 🌱 Thư viện Cảm biến Đa Thông số Đất
 Thư viện soil_multi_parameter_sensor_lib là một giải pháp mã nguồn mở mạnh mẽ, được phát triển để hỗ trợ giao tiếp với các cảm biến đa thông số đất thông qua vi điều khiển ESP32 bằng giao thức Modbus RTU (qua RS485). Ra đời với mục tiêu hỗ trợ các nhà phát triển, kỹ sư, và người yêu thích công nghệ trong việc thu thập dữ liệu từ đất như độ ẩm, nhiệt độ, độ pH, và các thông số môi trường khác, thư viện này mang lại sự tiện lợi và hiệu quả cho các dự án giám sát nông nghiệp thông minh, nghiên cứu môi trường, hoặc các ứng dụng IoT tiên tiến. Với thiết kế tối ưu, thư viện không chỉ tiết kiệm tài nguyên mà còn dễ dàng tích hợp vào các hệ thống hiện có.
 Dự án được khởi xướng bởi NTH106 và hiện được lưu trữ trên GitHub, nơi cộng đồng có thể đóng góp và sử dụng dưới Giấy phép MIT. Tính đến ngày 06/06/2025, thư viện đã trải qua nhiều bản cập nhật để cải thiện hiệu suất và khả năng tương thích, trở thành công cụ đáng tin cậy cho cả người mới bắt đầu lẫn các nhà phát triển chuyên nghiệp.
+modbus module
+![image](https://github.com/user-attachments/assets/87a59acc-f5fd-4323-a365-5bd251630b83)
 
 ✨ Tính năng Nổi bật
 
