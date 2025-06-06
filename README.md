@@ -40,9 +40,12 @@ Sử dụng module MAX485 V2 cùng với cảm biến đa thông số đất gi�
 
 
 📦 Cài đặt Thư viện
+
 Để bắt đầu sử dụng thư viện soil_multi_parameter_sensor_lib trong dự án của bạn, bạn cần thực hiện các bước cài đặt cơ bản sau đây để tích hợp nó vào môi trường phát triển ESP32 của mình. Các bước này được thiết kế để đảm bảo bạn có thể nhanh chóng triển khai thư viện mà không gặp bất kỳ khó khăn nào.
 
-🌐 Sao chép Kho lưu trữ từ GitHubĐầu tiên, bạn cần tải toàn bộ mã nguồn của thư viện từ kho lưu trữ chính thức trên GitHub. Mở terminal hoặc command line trên máy tính của bạn và chạy lệnh sau:
+🌐 Sao chép Kho lưu trữ từ GitHub
+
+Đầu tiên, bạn cần tải toàn bộ mã nguồn của thư viện từ kho lưu trữ chính thức trên GitHub. Mở terminal hoặc command line trên máy tính của bạn và chạy lệnh sau:
 git clone https://github.com/NTH106/soil_multi_parameter_sensor_lib.git
 
 Lệnh này sẽ tạo một thư mục mới trên máy tính của bạn, chứa toàn bộ mã nguồn của thư viện, sẵn sàng để tích hợp.
