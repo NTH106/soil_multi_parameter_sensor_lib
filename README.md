@@ -40,24 +40,56 @@ Sử dụng module MAX485 V2 cùng với cảm biến đa thông số đất gi�
 
 
 📦 Cài đặt Thư viện
+Để tích hợp thư viện soil_multi_parameter_sensor_lib vào dự án ESP32 và đảm bảo hoạt động đúng với cảm biến và module MAX485 V2 qua giao tiếp Modbus RTU, bạn cần cài đặt thư viện ModbusMaster và thực hiện các bước sau:
 
-Để bắt đầu sử dụng thư viện soil_multi_parameter_sensor_lib trong dự án của bạn, bạn cần thực hiện các bước cài đặt cơ bản sau đây để tích hợp nó vào môi trường phát triển ESP32 của mình. Các bước này được thiết kế để đảm bảo bạn có thể nhanh chóng triển khai thư viện mà không gặp bất kỳ khó khăn nào.
+1. Cài đặt thư viện ModbusMaster
+Bước 1: Tải và cài đặt
+Mở Arduino IDE hoặc môi trường phát triển tương thích với ESP32.
+Vào Sketch > Include Library > Manage Libraries.
+Tìm ModbusMaster (tác giả thường là Doc Walker) trong Library Manager và nhấn Install.
 
-🌐 Sao chép Kho lưu trữ từ GitHub
+Bước 2: Kiểm tra cài đặt
+Đảm bảo thư viện ModbusMaster xuất hiện trong Sketch > Include Library.
 
-Đầu tiên, bạn cần tải toàn bộ mã nguồn của thư viện từ kho lưu trữ chính thức trên GitHub. Mở terminal hoặc command line trên máy tính của bạn và chạy lệnh sau:
-git clone https://github.com/NTH106/soil_multi_parameter_sensor_lib.git
+Bước 3. Cài đặt thư viện soil_multi_parameter_sensor_lib
 
-Lệnh này sẽ tạo một thư mục mới trên máy tính của bạn, chứa toàn bộ mã nguồn của thư viện, sẵn sàng để tích hợp.
+Bước 4: Tải thư viện
+Tải thư viện soil_multi_parameter_sensor_lib từ nguồn chính thức (GitHub, trang web nhà cung cấp, hoặc kho lưu trữ dự án).
+Nếu thư viện ở dạng file ZIP, giải nén để sử dụng.
 
-📂 Tích hợp vào Dự án ESP32Sau khi tải về, bạn sẽ tìm thấy hai tệp chính là SoilSensorESP32.cpp và SoilSensorESP32.h trong thư mục của dự án. Hãy sao chép hai tệp này vào thư mục chứa mã nguồn của dự án ESP32 mà bạn đang phát triển. Đảm bảo rằng môi trường phát triển của bạn, chẳng hạn như Arduino IDE hoặc PlatformIO, có thể nhận diện được các tệp này để biên dịch mã nguồn một cách chính xác.
+Bước 5: Thêm vào Arduino IDE
+Vào Sketch > Include Library > Add .ZIP Library và chọn file ZIP của thư viện.
+Hoặc, sao chép thư mục thư viện vào thư mục libraries của Arduino IDE (thường tại Documents/Arduino/libraries).
 
-🔍 Kiểm tra Tệp Ví dụTrong kho lưu trữ, bạn sẽ thấy tệp test.ino, đây là một ví dụ minh họa cách sử dụng thư viện. Bạn có thể mở tệp này trong Arduino IDE hoặc bất kỳ công cụ nào hỗ trợ ESP32 để xem cách thư viện hoạt động với cảm biến. Tệp ví dụ này được thiết kế để giúp bạn nhanh chóng làm quen với các chức năng cơ bản của thư viện, từ đó dễ dàng áp dụng vào dự án của riêng mình.
+Bước 6: Xem tài liệu
+Kiểm tra tài liệu đi kèm (file README hoặc hướng dẫn) để biết yêu cầu cụ thể, như phiên bản tương thích hoặc phụ thuộc khác.
 
-⚙️ Cấu hình Môi trườngĐể đảm bảo mọi thứ hoạt động trơn tru, bạn cần kiểm tra xem môi trường phát triển của mình đã được cấu hình đúng hay chưa. Đảm bảo rằng bạn đã cài đặt thư viện hỗ trợ Modbus RTU (nếu cần) và driver cho ESP32. Ngoài ra, hãy kiểm tra xem bạn đã chọn đúng board ESP32 trong IDE của mình để tránh các lỗi liên quan đến phần cứng hoặc giao tiếp.
+Kết nối phần cứng:
 
-🧰 Chuẩn bị Phần cứngĐể sử dụng thư viện này, bạn cần chuẩn bị một cảm biến đa thông số đất như hình minh họa, một module MAX485 V2 để chuyển đổi tín hiệu TTL sang RS485, và vi điều khiển ESP32. Đảm bảo rằng bạn đã kết nối đúng các chân giữa cảm biến, module MAX485 V2, và ESP32, đồng thời cung cấp nguồn điện ổn định (5V hoặc 3.3V tùy theo yêu cầu của cảm biến và module) để tránh các sự cố trong quá trình vận hành.
+Kết nối module MAX485 V2 với ESP32:
 
+Chân Rxcủa MAX485 nối với chân 5 của ESP32.
+
+Chân Tx của MAX485 nối với chân 18 của ESP32.
+
+Chân A và B của MAX485 nối với các chân tương ứng của cảm biến qua bus RS485.
+
+Kiểm tra kết nối:
+
+Đảm bảo nguồn điện 5V và nối đất (GND) được kết nối chính xác.
+
+5. Kiểm tra và triển khai
+Kiểm tra thư viện:
+
+Viết một chương trình thử nghiệm đơn giản sử dụng ModbusMaster và soil_multi_parameter_sensor_lib để đọc dữ liệu từ cảm biến.
+
+Xác minh giao tiếp Modbus RTU bằng cách kiểm tra dữ liệu trả về qua Serial Monitor.
+
+Xử lý lỗi:
+
+Nếu gặp lỗi, kiểm tra kết nối phần cứng, cấu hình chân GPIO, và đảm bảo địa chỉ Modbus của cảm biến được khai báo đúng trong mã.
+
+Lưu ý: Luôn tham khảo tài liệu của cảm biến và module MAX485 V2 để đảm bảo cấu hình phù hợp.
 
 
 📂 Cấu trúc Dự án
