@@ -27,10 +27,15 @@ Sử dụng module MAX485 V2 cùng với cảm biến đa thông số đất gi�
 ✨ Tính năng Nổi bật
 
 🌧️ Hỗ trợ Đa Thông số: Thu thập dữ liệu từ cảm biến đất, bao gồm độ ẩm, nhiệt độ, độ pH, độ dẫn điện (EC), và các yếu tố môi trường khác, tùy thuộc vào loại cảm biến được sử dụng. Điều này giúp bạn có cái nhìn toàn diện về chất lượng đất trong thời gian thực.
+
 🔗 Giao thức Modbus RTU qua RS485: Sử dụng chuẩn công nghiệp Modbus RTU, đảm bảo giao tiếp ổn định và đáng tin cậy, phù hợp cho các hệ thống công nghiệp hoặc kết nối ở khoảng cách xa vớiModbus module.
+
 💻 Tối ưu cho ESP32: Được thiết kế đặc biệt để tận dụng sức mạnh của vi điều khiển ESP32, với hiệu suất cao, khả năng kết nối Wi-Fi và Bluetooth, cùng tính linh hoạt vượt trội, giúp mở rộng khả năng ứng dụng trong các dự án IoT.
+
 🛠️ API Đơn giản và Dễ sử dụng: Cung cấp các hàm giao tiếp trực quan, giúp nhà phát triển tích hợp thư viện mà không cần am hiểu sâu về giao thức Modbus, tiết kiệm thời gian và công sức.
+
 ⚡ Tiết kiệm Tài nguyên: Tối ưu hóa để sử dụng ít bộ nhớ và tài nguyên CPU, đảm bảo hoạt động mượt mà trên các thiết bị nhúng có hạn chế về phần cứng, ngay cả trong các dự án quy mô nhỏ.
+
 📜 Mã nguồn Mở: Phát hành dưới Giấy phép MIT, cho phép tự do chỉnh sửa, phát triển, và sử dụng trong các dự án cá nhân, học thuật, hoặc thương mại mà không gặp bất kỳ rào cản pháp lý nào.
 
 
