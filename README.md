@@ -1,14 +1,18 @@
 🌱 Thư viện Cảm biến Đa Thông số Đất
 Thư viện soil_multi_parameter_sensor_lib là một giải pháp mã nguồn mở mạnh mẽ và linh hoạt, được phát triển với mục tiêu hỗ trợ các nhà phát triển, kỹ sư, và những người đam mê công nghệ trong việc giao tiếp với các cảm biến đa thông số đất thông qua vi điều khiển ESP32, sử dụng giao thức Modbus RTU (qua RS485). Dự án này ra đời nhằm đáp ứng nhu cầu ngày càng tăng về các giải pháp giám sát đất đai trong thời đại công nghệ 4.0, nơi dữ liệu chính xác và kịp thời đóng vai trò quan trọng trong việc nâng cao hiệu quả sản xuất nông nghiệp, bảo vệ môi trường, và phát triển các hệ thống IoT thông minh.
 Thư viện này cho phép thu thập các thông số quan trọng từ đất như độ ẩm, nhiệt độ, độ pH, độ dẫn điện (EC), và nhiều yếu tố môi trường khác, tùy thuộc vào loại cảm biến được sử dụng. Với thiết kế tối ưu và khả năng tích hợp dễ dàng, soil_multi_parameter_sensor_lib không chỉ mang lại hiệu suất cao mà còn tiết kiệm tài nguyên, giúp các nhà phát triển tập trung vào việc xây dựng các ứng dụng thực tiễn mà không phải lo lắng về các chi tiết kỹ thuật phức tạp.
-Dự án được khởi xướng bởi NTH106, một nhà phát triển đam mê công nghệ IoT và nông nghiệp thông minh, và hiện được lưu trữ trên GitHub, nơi cộng đồng có thể tự do đóng góp, chỉnh sửa, và sử dụng dưới Giấy phép MIT. Tính đến ngày 06/06/2025, 14:27 (+07), thư viện đã trải qua nhiều lần cập nhật để cải thiện hiệu suất, khả năng tương thích, và hỗ trợ thêm nhiều loại cảm biến khác nhau. Đây là một công cụ đáng tin cậy cho cả người mới bắt đầu lẫn các nhà phát triển chuyên nghiệp, giúp họ nhanh chóng triển khai các dự án liên quan đến đất đai và môi trường.
+Dự án được khởi xướng bởi NTH106, một nhà phát triển đam mê công nghệ IoT và nông nghiệp thông minh, và hiện được lưu trữ trên GitHub, nơi cộng đồng có thể tự do đóng góp, chỉnh sửa, và sử dụng dưới Giấy phép MIT. Tính đến ngày 06/06/2025, thư viện đã trải qua nhiều lần cập nhật để cải thiện hiệu suất, khả năng tương thích, và hỗ trợ thêm nhiều loại cảm biến khác nhau. Đây là một công cụ đáng tin cậy cho cả người mới bắt đầu lẫn các nhà phát triển chuyên nghiệp, giúp họ nhanh chóng triển khai các dự án liên quan đến đất đai và môi trường.
 
 🌟 Giới thiệu về Cảm biến và Module Giao tiếp
+
+
 📍 Cảm biến Đa Thông số Đất
 ![image](https://github.com/user-attachments/assets/df7664e6-637d-469f-abe3-723f807de540)
 
 Cảm biến đa thông số đất được sử dụng trong dự án này là một thiết bị công nghiệp với giao diện RS485, hỗ trợ giao thức Modbus RTU. Thiết bị này có thiết kế chắc chắn với 5 đầu dò kim loại, được tối ưu để đo lường nhiều thông số cùng lúc, bao gồm độ ẩm, nhiệt độ, độ pH, và độ dẫn điện (EC). Nhờ khả năng hoạt động ổn định trong môi trường khắc nghiệt, cảm biến này rất phù hợp cho các ứng dụng ngoài trời, như trong nông nghiệp, nghiên cứu môi trường, hoặc các hệ thống giám sát tự động.
 Hình ảnh cảm biến:
+
+
 📡 Module MAX485 V2
 ![image](https://github.com/user-attachments/assets/97db52c8-e105-45ff-9b68-c005ab9dbd7a)
 
