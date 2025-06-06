@@ -21,8 +21,8 @@ Module MAX485 V2 thường có các chân kết nối như sau:
 
 VCC: Nguồn 5V (hoặc 3.3V tùy phiên bản).  
 GND: Chân nối đất.  
-A và B: Chân giao tiếp RS485 (kết nối với cảm biến). 
-sử dụng uart để giao tiếp với vi điều khiển.
+A và B: Chân giao tiếp RS485 (kết nối với cảm biến).      
+Sử dụng uart để giao tiếp với vi điều khiển.
 
 Sử dụng module MAX485 V2 cùng với cảm biến đa thông số đất giúp đảm bảo giao tiếp ổn định và chính xác, ngay cả trong các điều kiện môi trường có nhiễu điện từ.
 
