@@ -43,6 +43,7 @@ Sử dụng module MAX485 V2 cùng với cảm biến đa thông số đất gi�
 Để tích hợp thư viện soil_multi_parameter_sensor_lib vào dự án ESP32 và đảm bảo hoạt động đúng với cảm biến và module MAX485 V2 qua giao tiếp Modbus RTU, bạn cần cài đặt thư viện ModbusMaster và thực hiện các bước sau:
 
 1. Cài đặt thư viện ModbusMaster
+
 Bước 1: Tải và cài đặt
 Mở Arduino IDE hoặc môi trường phát triển tương thích với ESP32.
 Vào Sketch > Include Library > Manage Libraries.
@@ -64,11 +65,11 @@ Hoặc, sao chép thư mục thư viện vào thư mục libraries của Arduino
 Bước 6: Xem tài liệu
 Kiểm tra tài liệu đi kèm (file README hoặc hướng dẫn) để biết yêu cầu cụ thể, như phiên bản tương thích hoặc phụ thuộc khác.
 
-Kết nối phần cứng:
+2. Kết nối phần cứng:
 
 Kết nối module MAX485 V2 với ESP32:
 
-Chân Rxcủa MAX485 nối với chân 5 của ESP32.
+Chân Rx của MAX485 nối với chân 5 của ESP32.
 
 Chân Tx của MAX485 nối với chân 18 của ESP32.
 
@@ -78,7 +79,8 @@ Kiểm tra kết nối:
 
 Đảm bảo nguồn điện 5V và nối đất (GND) được kết nối chính xác.
 
-5. Kiểm tra và triển khai
+Kiểm tra và triển khai
+
 Kiểm tra thư viện:
 
 Viết một chương trình thử nghiệm đơn giản sử dụng ModbusMaster và soil_multi_parameter_sensor_lib để đọc dữ liệu từ cảm biến.
